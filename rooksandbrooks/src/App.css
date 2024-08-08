@@ -1,0 +1,9 @@
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.copyright{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 13px;
+    
+}

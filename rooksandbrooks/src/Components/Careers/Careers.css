@@ -1,0 +1,220 @@
+.careers-container {
+    background: url('../../Asserts/hiring-concept-with-pawns.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 200px;
+}
+
+.careers-head {
+    font-size: 20px;
+    width: 100%;
+    max-width: 530px;
+    padding: 20px;
+    backdrop-filter: blur(30px);
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #0b3470;
+    position: relative;
+}
+
+.title::before,
+.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #0b3470;
+}
+
+.title::after {
+    animation: pulse 1s linear infinite;
+}
+
+.message,
+.signin {
+    font-size: 16.5px;
+    color: #0b3470;
+}
+
+
+.signin a:hover {
+    text-decoration: underline;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form label {
+    position: relative;
+}
+
+.form label .input {
+    margin-top: 10px;
+    background-color: transparent;
+    color: #0b3470;
+    width: 100%;
+    padding: 10px ;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+.flex span{
+    color: #0b3470;
+}
+.form label .input:placeholder-shown+span {
+    top: 12.5px;
+    font-size: 0.9em;
+}
+
+.form label .input:focus+span,
+.form label .input:valid+span {
+    color: #00bfff;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.input {
+    font-size: medium;
+}
+
+.submit {
+    margin-top: 20px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    background-color:#0b3470;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #04273396;
+}
+
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+label input[type="file"] + .custom-file-upload {
+    display: inline-block;
+}
+
+
+
+@keyframes pulse {
+    from {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .careers-head {
+        font-size: 24px;
+        display: none;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .form {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .form label .input {
+        padding: 15px 5px 5px 10px;
+    }
+
+    .signin {
+        font-size: 13px;
+    }
+
+    .submit {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .careers-head {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .form {
+        padding: 10px;
+    }
+
+    .form label .input {
+        padding: 12px 5px 5px 10px;
+    }
+
+    .signin {
+        font-size: 12px;
+    }
+
+    .submit {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
